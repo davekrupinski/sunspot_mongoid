@@ -50,7 +50,7 @@ module Sunspot
         if ::Mongoid::VERSION < "2.0.0"
           @clazz.criteria.id(ids)
         else
-          @class.criteria.for_ids(ids)
+          @clazz.criteria.for_ids(ids)
         end
       end
 
